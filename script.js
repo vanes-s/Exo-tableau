@@ -21,17 +21,15 @@ furnitures.forEach(furniture => {
     console.log(furniture);   
 });
 let values1= ["Apple", 1, false, "2"];
-let values2 = [`5`, "Fries", 2 , true];
+let values2 = [`5`, "Fries", 2 , 'true'];
 let values3 = ["Mars", "Strawberry", 9];
 
-
 let newArrayvalues =values1.concat(values2, values3);
-newArrayvalues.forEach((newArrayvalue,index) => {console.log(newArrayvalue,index);
-    
+newArrayvalues.forEach((newArrayvalue) => {console.log(newArrayvalue);
 });
 let vanessa = newArrayvalues.filter(Number);
 
-console.log(vanessa)
+console.log(vanessa);
 
 
 
