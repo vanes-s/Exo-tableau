@@ -11,25 +11,32 @@
 // });
 
 
-// let someDataTypes = ["string", 1, true, null];
+let someDataTypes = ["string", 1, true, null];
 
-// someDataTypes.forEach((someDataType , index) => {
-//     console.log(typeof someDataType,index); 
-// });
+someDataTypes.forEach((someDataType , index) => {
+    console.log(typeof someDataType,index); 
+});
+
+let myArret = [];
+let copymyArret = myArret.slice();
+console.log(copymyArret);
+myArret.unshift("pomme","plat",2);
+console.log(myArret);
+
 let furnitures = ['Table', 'Chairs','Couch'];
 furnitures.forEach(furniture => {
     console.log(furniture);   
 });
 let values1= ["Apple", 1, false, "2"];
-let values2 = [`5`, "Fries", 2 , 'true'];
+let values2 = [`5`, "Fries", 2 , true];
 let values3 = ["Mars", "Strawberry", 9];
 
-let newArrayvalues =values1.concat(values2, values3);
-newArrayvalues.forEach((newArrayvalue) => {console.log(newArrayvalue);
-});
-let vanessa = newArrayvalues.filter(Number);
+let newArrayvalues = values1.concat(values2, values3);
 
-console.log(vanessa);
+let filteredArray = newArrayvalues.filter(element => typeof element === "number");
 
+console.log(filteredArray);
 
-
+let studentCoursesA = ['Math', 'English', 'Programming'];
+let studentCoursesB = ['Geography', 'Spanish', 'Programming'];
+studentCoursesA.forEach((studentCourseA,index)){console.log(studentCourseA,index);};
